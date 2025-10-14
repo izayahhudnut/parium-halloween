@@ -35,7 +35,7 @@ export default function InviteContent() {
         <ShootingStars />
         <StarsBackground />
         <Image
-          src="/loading.png"
+          src="/loading.svg"
           alt="Loading"
           width={800}
           height={600}
