@@ -72,7 +72,7 @@ export default function InviteContent() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
             You&apos;re Invited
           </h1>
-          <h2 className="text-6xl sm:text-7xl md:text-8xl font-bold text-black capitalize">
+          <h2 className="text-7xl sm:text-8xl md:text-9xl font-bold text-black capitalize">
             {firstName}
           </h2>
         </div>
