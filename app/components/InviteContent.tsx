@@ -8,6 +8,7 @@ import { StarsBackground } from '@/components/ui/stars-background';
 
 export default function InviteContent() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isFading, setIsFading] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const searchParams = useSearchParams();
   const firstName = searchParams.get('name') || 'Guest';
@@ -23,56 +24,62 @@ export default function InviteContent() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
+      setIsFading(true);
+      const fadeTimer = setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+      
+      return () => clearTimeout(fadeTimer);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return (
-      <div className="min-h-screen w-full bg-black flex items-center justify-center relative">
+      <div className={`min-h-screen w-full bg-black flex items-center justify-center relative transition-opacity duration-1000 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
         <ShootingStars />
         <StarsBackground />
         <Image
-          src="/loading.svg"
+          src="/loading.png"
           alt="Loading"
           fill
           className="animate-fade-in object-contain relative z-10"
           priority
         />
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black opacity-60 z-20 pointer-events-none"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-black p-4 relative" style={{backgroundColor: '#D9BFA4'}}>
+    <div className="min-h-screen flex flex-col items-center justify-center text-white p-4 relative bg-black">
      
       
       {/* Floating icons */}
-      <Image src="/coffin.svg" alt="Coffin" width={60} height={60} className="opacity-10 absolute animate-float-1 animate-fade-in-delay z-10" style={{top: '5%', left: '5%'}} />
-      <Image src="/thriller.svg" alt="Thriller" width={50} height={50} className="opacity-10 absolute animate-float-2 animate-fade-in-delay z-10" style={{top: '10%', right: '8%'}} />
-      <Image src="/witch-hat.svg" alt="Witch hat" width={55} height={55} className="opacity-10 absolute animate-float-3 animate-fade-in-delay z-10" style={{top: '25%', left: '3%'}} />
-      <Image src="/witch-broom.svg" alt="Witch broom" width={50} height={50} className="opacity-10 absolute animate-float-4 animate-fade-in-delay z-10" style={{top: '30%', right: '5%'}} />
-      <Image src="/coffin.svg" alt="Coffin" width={45} height={45} className="opacity-10 absolute animate-float-5 animate-fade-in-delay z-10" style={{top: '45%', left: '10%'}} />
-      <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="opacity-10 absolute animate-float-6 animate-fade-in-delay z-10" style={{top: '50%', right: '12%'}} />
+      <Image src="/coffin.svg" alt="Coffin" width={60} height={60} className="absolute animate-float-1 animate-fade-in-delay-icons opacity-20 z-10 filter invert" style={{top: '5%', left: '5%'}} />
+      <Image src="/thriller.svg" alt="Thriller" width={50} height={50} className="absolute animate-float-2 animate-fade-in-delay-icons opacity-20 z-10 filter invert" style={{top: '10%', right: '8%'}} />
+      <Image src="/witch-hat.svg" alt="Witch hat" width={55} height={55} className="absolute animate-float-3 animate-fade-in-delay-icons opacity-20 z-10 filter invert" style={{top: '25%', left: '3%'}} />
+      <Image src="/witch-broom.svg" alt="Witch broom" width={50} height={50} className="absolute animate-float-4 animate-fade-in-delay-icons opacity-20 z-10 filter invert" style={{top: '30%', right: '5%'}} />
+      <Image src="/coffin.svg" alt="Coffin" width={45} height={45} className="absolute animate-float-5 animate-fade-in-delay-icons opacity-20 z-10 filter invert" style={{top: '45%', left: '10%'}} />
+      <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="absolute animate-float-6 animate-fade-in-delay-icons opacity-20 z-10 filter invert" style={{top: '50%', right: '12%'}} />
       
       {/* Photobooth overlays */}
-      <Image src="/Vintagephoto.png" alt="Photobooth strip" width={130} height={140} className="absolute animate-fade-in-delay opacity-20 z-5" style={{top: '5%', right: '1%', transform: 'rotate(-15deg)'}} />
-      <Image src="/Vintagephoto1.png" alt="Photobooth strip" width={130} height={145} className="absolute animate-fade-in-delay opacity-25 z-5" style={{top: '35%', left: '8%', transform: 'rotate(12deg)'}} />
+      <Image src="/Vintagephoto.png" alt="Photobooth strip" width={130} height={140} className="absolute animate-fade-in-delay-photo-light z-5" style={{top: '5%', right: '1%', transform: 'rotate(-15deg)'}} />
+      <Image src="/Vintagephoto1.png" alt="Photobooth strip" width={130} height={145} className="absolute animate-fade-in-delay z-5" style={{top: '35%', left: '8%', transform: 'rotate(12deg)'}} />
       
       <div className="text-center space-y-8 max-w-md mx-auto relative z-10">
         <div className="animate-fade-in">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
             You&apos;re Invited
           </h1>
-          <h2 className="text-7xl sm:text-8xl md:text-9xl font-bold text-black capitalize">
+          <h2 className="text-7xl sm:text-8xl md:text-9xl font-bold text-white capitalize">
             {firstName}
           </h2>
         </div>
         
         <div className="animate-fade-in-delay space-y-4">
-          <p className="text-lg sm:text-xl text-black">
+          <p className="text-lg sm:text-xl text-white">
             Parium Presents: A Halloween Soirée<br />
             October 31st at 8pm
           </p>

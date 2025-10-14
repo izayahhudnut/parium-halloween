@@ -40,6 +40,17 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fade-in-delay-icons {
+  from { opacity: 0 !important; transform: translateY(20px); }
+  to { opacity: 0.1 !important; transform: translateY(0); }
+}
+
+@keyframes fade-in-delay-photo-light {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 0.35; transform: translateY(0); }
+}
+
+
 .animate-fade-in-out-once {
   animation: fade-in-out-once 3s ease-in-out;
 }
@@ -51,6 +62,15 @@ body {
 .animate-fade-in-delay {
   animation: fade-in-delay 1s ease-out 0.5s both;
 }
+
+.animate-fade-in-delay-icons {
+  animation: fade-in-delay-icons 1s ease-out 0.5s both;
+}
+
+.animate-fade-in-delay-photo-light {
+  animation: fade-in-delay-photo-light 1s ease-out 0.5s both;
+}
+
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -107,4 +127,9 @@ body {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Radial gradient for fade to black effect */
+.bg-gradient-radial {
+  background: radial-gradient(circle, transparent 30%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.8) 100%);
 }
