@@ -37,9 +37,8 @@ export default function InviteContent() {
         <Image
           src="/loading.svg"
           alt="Loading"
-          width={800}
-          height={600}
-          className="animate-fade-in h-screen w-auto object-contain relative z-10"
+          fill
+          className="animate-fade-in object-contain relative z-10"
           priority
         />
       </div>
