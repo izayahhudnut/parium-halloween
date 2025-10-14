@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 
 export default function Success() {
@@ -86,27 +85,32 @@ export default function Success() {
         </div>
       </div>
       
-      {/* Photo Gallery */}
-      <div className="w-full overflow-hidden mt-16 animate-fade-in-delay">
-        <div className="flex animate-marquee whitespace-nowrap">
-          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party.png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party (1).png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party (2).png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party.png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party (1).png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party (2).png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party.png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party (1).png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
-          <Image src="/HEIC to PNG Party (2).png" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 w-[250px] sm:w-[320px] h-[280px] sm:h-[350px] object-cover object-center" />
+      <div className="w-full overflow-x-hidden mt-16 animate-fade-in-delay">
+        <div className="flex animate-marquee whitespace-nowrap w-full">
+          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
         </div>
       </div>
     </div>

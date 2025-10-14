@@ -15,17 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Parium",
   description: "Parium Presents: A Halloween Soirée",
-  openGraph: {
-    title: "Parium",
-    description: "Parium Presents: A Halloween Soirée",
-    images: ["/og-image.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Parium",
-    description: "Parium Presents: A Halloween Soirée",
-    images: ["/og-image.png"],
-  },
 };
 
 export default function RootLayout({
