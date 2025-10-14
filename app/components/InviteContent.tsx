@@ -67,8 +67,8 @@ export default function InviteContent() {
       <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="absolute animate-float-6 animate-fade-in-delay" style={{top: '50%', right: '12%'}} />
       
       {/* Photobooth overlays */}
-      <Image src="/Vintage Photobooth Photo Strip (1).svg" alt="Photobooth strip" width={80} height={140} className="absolute animate-fade-in-delay opacity-20 z-5" style={{top: '5%', right: '5%', transform: 'rotate(-15deg)'}} />
-      <Image src="/Vintage Photobooth Photo Strip.svg" alt="Photobooth strip" width={80} height={145} className="absolute animate-fade-in-delay opacity-25 z-5" style={{top: '35%', left: '8%', transform: 'rotate(12deg)'}} />
+      <Image src="/Vintagephoto1.svg" alt="Photobooth strip" width={80} height={140} className="absolute animate-fade-in-delay opacity-20 z-5" style={{top: '5%', right: '5%', transform: 'rotate(-15deg)'}} />
+      <Image src="/Vintagephoto.svg" alt="Photobooth strip" width={80} height={145} className="absolute animate-fade-in-delay opacity-25 z-5" style={{top: '35%', left: '8%', transform: 'rotate(12deg)'}} />
       
       <div className="text-center space-y-8 max-w-md mx-auto relative z-10">
         <div className="animate-fade-in">
