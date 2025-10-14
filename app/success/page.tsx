@@ -33,7 +33,7 @@ export default function Success() {
       <div className="text-center space-y-12 max-w-md mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-8 text-black">
-            You're in!
+            You&apos;re in!
           </h1>
         </div>
         
@@ -79,7 +79,7 @@ export default function Success() {
           <div className="mt-8 text-center max-w-md mx-auto">
             <p className="text-gray-500 text-base italic">
               Thank you for joining us for what promises to be an unforgettable evening. 
-              We can't wait to celebrate with you!
+              We can&apos;t wait to celebrate with you!
             </p>
           </div>
         </div>
