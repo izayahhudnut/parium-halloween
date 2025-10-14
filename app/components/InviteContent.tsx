@@ -47,24 +47,15 @@ export default function InviteContent() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-black p-4 relative" style={{backgroundColor: '#D9BFA4'}}>
-      {/* Logo at top */}
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
-        <Image
-          src="/logo.png"
-          alt="Parium Logo"
-          width={30}
-          height={15}
-          className="animate-fade-in"
-        />
-      </div>
+     
       
       {/* Floating icons */}
-      <Image src="/coffin.svg" alt="Coffin" width={60} height={60} className="absolute animate-float-1 animate-fade-in-delay z-10" style={{top: '5%', left: '5%'}} />
-      <Image src="/thriller.svg" alt="Thriller" width={50} height={50} className="absolute animate-float-2 animate-fade-in-delay z-10" style={{top: '10%', right: '8%'}} />
-      <Image src="/witch-hat.svg" alt="Witch hat" width={55} height={55} className="absolute animate-float-3 animate-fade-in-delay z-10" style={{top: '25%', left: '3%'}} />
-      <Image src="/witch-broom.svg" alt="Witch broom" width={50} height={50} className="absolute animate-float-4 animate-fade-in-delay z-10" style={{top: '30%', right: '5%'}} />
-      <Image src="/coffin.svg" alt="Coffin" width={45} height={45} className="absolute animate-float-5 animate-fade-in-delay z-10" style={{top: '45%', left: '10%'}} />
-      <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="absolute animate-float-6 animate-fade-in-delay z-10" style={{top: '50%', right: '12%'}} />
+      <Image src="/coffin.svg" alt="Coffin" width={60} height={60} className="opacity-10 absolute animate-float-1 animate-fade-in-delay z-10" style={{top: '5%', left: '5%'}} />
+      <Image src="/thriller.svg" alt="Thriller" width={50} height={50} className="opacity-10 absolute animate-float-2 animate-fade-in-delay z-10" style={{top: '10%', right: '8%'}} />
+      <Image src="/witch-hat.svg" alt="Witch hat" width={55} height={55} className="opacity-10 absolute animate-float-3 animate-fade-in-delay z-10" style={{top: '25%', left: '3%'}} />
+      <Image src="/witch-broom.svg" alt="Witch broom" width={50} height={50} className="opacity-10 absolute animate-float-4 animate-fade-in-delay z-10" style={{top: '30%', right: '5%'}} />
+      <Image src="/coffin.svg" alt="Coffin" width={45} height={45} className="opacity-10 absolute animate-float-5 animate-fade-in-delay z-10" style={{top: '45%', left: '10%'}} />
+      <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="opacity-10 absolute animate-float-6 animate-fade-in-delay z-10" style={{top: '50%', right: '12%'}} />
       
       {/* Photobooth overlays */}
       <Image src="/Vintagephoto.png" alt="Photobooth strip" width={130} height={140} className="absolute animate-fade-in-delay opacity-20 z-5" style={{top: '5%', right: '1%', transform: 'rotate(-15deg)'}} />
