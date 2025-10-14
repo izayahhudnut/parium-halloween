@@ -9,8 +9,8 @@ export default function Success() {
   const addToCalendar = () => {
     const event = {
       title: 'Parium Halloween Soirée',
-      start: '20251101T020000Z',
-      end: '20251101T060000Z',
+      start: '20251101T010000Z',
+      end: '20251101T050000Z',
       description: 'Parium Presents: A Halloween Soirée',
       location: '3615 Olive St. St. Louis MO 63108'
     };
