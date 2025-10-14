@@ -59,16 +59,16 @@ export default function InviteContent() {
       </div>
       
       {/* Floating icons */}
-      <Image src="/coffin.svg" alt="Coffin" width={60} height={60} className="absolute animate-float-1 animate-fade-in-delay" style={{top: '5%', left: '5%'}} />
-      <Image src="/thriller.svg" alt="Thriller" width={50} height={50} className="absolute animate-float-2 animate-fade-in-delay" style={{top: '10%', right: '8%'}} />
-      <Image src="/witch-hat.svg" alt="Witch hat" width={55} height={55} className="absolute animate-float-3 animate-fade-in-delay" style={{top: '25%', left: '3%'}} />
-      <Image src="/witch-broom.svg" alt="Witch broom" width={50} height={50} className="absolute animate-float-4 animate-fade-in-delay" style={{top: '30%', right: '5%'}} />
-      <Image src="/coffin.svg" alt="Coffin" width={45} height={45} className="absolute animate-float-5 animate-fade-in-delay" style={{top: '45%', left: '10%'}} />
-      <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="absolute animate-float-6 animate-fade-in-delay" style={{top: '50%', right: '12%'}} />
+      <Image src="/coffin.svg" alt="Coffin" width={60} height={60} className="absolute animate-float-1 animate-fade-in-delay z-10" style={{top: '5%', left: '5%'}} />
+      <Image src="/thriller.svg" alt="Thriller" width={50} height={50} className="absolute animate-float-2 animate-fade-in-delay z-10" style={{top: '10%', right: '8%'}} />
+      <Image src="/witch-hat.svg" alt="Witch hat" width={55} height={55} className="absolute animate-float-3 animate-fade-in-delay z-10" style={{top: '25%', left: '3%'}} />
+      <Image src="/witch-broom.svg" alt="Witch broom" width={50} height={50} className="absolute animate-float-4 animate-fade-in-delay z-10" style={{top: '30%', right: '5%'}} />
+      <Image src="/coffin.svg" alt="Coffin" width={45} height={45} className="absolute animate-float-5 animate-fade-in-delay z-10" style={{top: '45%', left: '10%'}} />
+      <Image src="/thriller.svg" alt="Thriller" width={40} height={40} className="absolute animate-float-6 animate-fade-in-delay z-10" style={{top: '50%', right: '12%'}} />
       
       {/* Photobooth overlays */}
-      <Image src="/Vintagephoto1.svg" alt="Photobooth strip" width={80} height={140} className="absolute animate-fade-in-delay opacity-20 z-5" style={{top: '5%', right: '5%', transform: 'rotate(-15deg)'}} />
-      <Image src="/Vintagephoto.svg" alt="Photobooth strip" width={80} height={145} className="absolute animate-fade-in-delay opacity-25 z-5" style={{top: '35%', left: '8%', transform: 'rotate(12deg)'}} />
+      <Image src="/Vintagephoto.png" alt="Photobooth strip" width={130} height={140} className="absolute animate-fade-in-delay opacity-20 z-5" style={{top: '5%', right: '1%', transform: 'rotate(-15deg)'}} />
+      <Image src="/Vintagephoto1.png" alt="Photobooth strip" width={130} height={145} className="absolute animate-fade-in-delay opacity-25 z-5" style={{top: '35%', left: '8%', transform: 'rotate(12deg)'}} />
       
       <div className="text-center space-y-8 max-w-md mx-auto relative z-10">
         <div className="animate-fade-in">
