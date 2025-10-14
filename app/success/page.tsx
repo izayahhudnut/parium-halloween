@@ -12,7 +12,7 @@ export default function Success() {
       start: '20251101T020000Z',
       end: '20251101T060000Z',
       description: 'Parium Presents: A Halloween Soirée',
-      location: '18 S Kingshighway, Saint Louis'
+      location: '3615 Olive St. St. Louis MO 63108'
     };
     
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}`;
@@ -69,7 +69,7 @@ export default function Success() {
                 <span className="text-2xl">📍</span>
                 <div>
                   <p className="font-semibold text-black text-lg">Location</p>
-                  <p className="text-black text-lg">18 S Kingshighway, Saint Louis</p>
+                  <p className="text-black text-lg">3615 Olive St. St. Louis MO 63108</p>
                 </div>
               </div>
               
