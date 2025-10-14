@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
+import { ShootingStars } from '@/components/ui/shooting-stars';
+import { StarsBackground } from '@/components/ui/stars-background';
 
 export default function InviteContent() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,13 +31,15 @@ export default function InviteContent() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen w-full bg-black flex items-center justify-center">
+      <div className="min-h-screen w-full bg-black flex items-center justify-center relative">
+        <ShootingStars />
+        <StarsBackground />
         <Image
           src="/loading.png"
           alt="Loading"
           width={800}
           height={600}
-          className="animate-fade-in h-screen w-auto object-contain"
+          className="animate-fade-in h-screen w-auto object-contain relative z-10"
           priority
         />
       </div>
@@ -76,7 +80,7 @@ export default function InviteContent() {
         <div className="animate-fade-in-delay space-y-4">
           <p className="text-lg sm:text-xl text-black">
             Parium Presents: A Halloween Soirée<br />
-            October 31st at 7pm
+            October 31st at 8pm
           </p>
         </div>
         
@@ -122,6 +126,16 @@ export default function InviteContent() {
           <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-6.jpg')} />
           <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-7.jpg')} />
           <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-8.jpg')} />
+          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-1.jpg')} />
+          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-2.jpg')} />
+          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-3.jpg')} />
+          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-4.jpg')} />
+          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-5.jpg')} />
+          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-6.jpg')} />
+          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-7.jpg')} />
+          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-8.jpg')} />
+          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-1.jpg')} />
+          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-80" onClick={() => setSelectedImage('/invite-2.jpg')} />
         </div>
       </div>
 

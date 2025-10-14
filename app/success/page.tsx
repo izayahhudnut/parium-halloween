@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import { ShootingStars } from '@/components/ui/shooting-stars';
+import { StarsBackground } from '@/components/ui/stars-background';
 
 export default function Success() {
 
@@ -19,16 +21,8 @@ export default function Success() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-black p-4 relative" style={{backgroundColor: '#D9BFA4'}}>
-      {/* Logo at top */}
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
-        <Image
-          src="/logo.png"
-          alt="Parium Logo"
-          width={30}
-          height={15}
-          className="animate-fade-in"
-        />
-      </div>
+      <ShootingStars />
+      <StarsBackground />
       
       <div className="text-center space-y-12 max-w-md mx-auto">
         <div className="animate-fade-in">
@@ -44,8 +38,8 @@ export default function Success() {
               onClick={() => window.location.href = '/gallery'}
               className="flex flex-col items-center space-y-2 hover:opacity-70 transition-opacity"
             >
-              <Image src="/witch-hat.svg" alt="Gallery" width={40} height={40} />
-              <span className="text-sm font-medium">View Gallery</span>
+              <Image src="/witch-hat.svg" alt="Venue" width={40} height={40} />
+              <span className="text-sm font-medium">View Venue</span>
             </button>
             
             <button 
@@ -57,60 +51,84 @@ export default function Success() {
             </button>
           </div>
           
-          <h2 className="text-5xl sm:text-4xl md:text-5xl font-bold text-black mt-8">
-            Parium Halloween 2025 👻
-          </h2>
+          <div className="w-full border-t border-black border-opacity-5 pt-6 mt-8">
+            <h2 className="text-5xl sm:text-4xl md:text-5xl font-bold text-black text-left">
+              Parium Halloween Soirée
+            </h2>
+            <p className="text-black text-lg mt-4 text-left">
+              Thank you for joining us for what promises to be an unforgettable evening. We can&apos;t wait to celebrate with you! 👻🎃🦇🕷️
+            </p>
+          </div>
+          <div className="w-full border-b border-black border-opacity-5 pb-6"></div>
           
           {/* Event Details */}
-          <div className="mt-8 text-left space-y-2 max-w-sm mx-auto">
-            <h3 className="text-xl font-bold text-black mb-4">Event Details:</h3>
-            <p className="text-lg text-black">
-              📍 Location: 18 S Kingshighway, Saint Louis
-            </p>
-            <p className="text-lg text-black">
-              🕰️ Time: Friday, October 31, 2025 · 8:00 PM - Midnight
-            </p>
-            <p className="text-lg text-black">
-              👗 Attire: Costumes encouraged!
-            </p>
+          <div className="mt-8 w-full max-w-lg mx-auto">
+            <h3 className="text-2xl font-bold text-black mb-6 text-left">Event Details:</h3>
+            <div className="space-y-4 text-left">
+              <div className="flex items-start space-x-3">
+                <span className="text-2xl">📍</span>
+                <div>
+                  <p className="font-semibold text-black text-lg">Location</p>
+                  <p className="text-black text-lg">18 S Kingshighway, Saint Louis</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <span className="text-2xl">🕰️</span>
+                <div>
+                  <p className="font-semibold text-black text-lg">Time</p>
+                  <p className="text-black text-lg">Friday, October 31, 2025</p>
+                  <p className="text-black text-lg">8:00 PM - Midnight</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <span className="text-2xl">👗</span>
+                <div>
+                  <p className="font-semibold text-black text-lg">Attire</p>
+                  <p className="text-black text-lg">Costumes encouraged!</p>
+                </div>
+              </div>
+            </div>
           </div>
           
-          {/* Thank You Message */}
-          <div className="mt-8 text-center max-w-md mx-auto">
-            <p className="text-gray-500 text-base italic">
-              Thank you for joining us for what promises to be an unforgettable evening. 
-              We can&apos;t wait to celebrate with you!
-            </p>
-          </div>
         </div>
       </div>
       
       <div className="w-full overflow-x-hidden mt-16 animate-fade-in-delay">
         <div className="flex animate-marquee whitespace-nowrap w-full">
-          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-6.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-7.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
-          <Image src="/invite-8.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/DSC08806 2.JPEG" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-5.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-4.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-3.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-1.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
+          <Image src="/party-2.jpg" alt="Party image" width={250} height={180} className="mx-2 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity w-auto h-64" />
         </div>
       </div>
     </div>
